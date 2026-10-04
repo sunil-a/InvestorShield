@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestorShield</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🛡️ InvestorShield</div>
+        <div class="tagline">Investor Safety & Awareness</div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>Check Before You Trust</h1>
+            <p>
+                Analyze financial messages and identify potential
+                warning signs before taking action.
+            </p>
+        </section>
+
+        <section class="card">
+
+            <label for="message">
+                Paste a financial message
+            </label>
+
+            <textarea
+                id="message"
+                placeholder="Example: Guaranteed 50% returns in 10 days. Join our Telegram group now..."
+            ></textarea>
+
+            <button onclick="checkMessage()">
+                🔍 Analyze Message
+            </button>
+
+        </section>
+
+        <section id="result" class="result hidden">
+
+            <h2 id="riskTitle"></h2>
+
+            <div id="riskScore"></div>
+
+            <h3>🚩 Risk Indicators</h3>
+
+            <ul id="indicators"></ul>
+
+            <h3>💡 Explanation</h3>
+
+            <p id="explanation"></p>
+
+            <div class="safety">
+                <h3>🛡️ Safety Guidance</h3>
+
+                <p>
+                    Verify financial claims through reliable official
+                    sources before transferring money or making an
+                    investment decision.
+                </p>
+
+                <p>
+                    Never share OTPs, passwords or sensitive financial
+                    information with unknown persons.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="info">
+
+            <h2>What InvestorShield Does</h2>
+
+            <div class="features">
+
+                <div>
+                    <span>🔎</span>
+                    <h3>Detect</h3>
+                    <p>Identifies potentially risky language.</p>
+                </div>
+
+                <div>
+                    <span>⚠️</span>
+                    <h3>Explain</h3>
+                    <p>Shows why a message may deserve caution.</p>
+                </div>
+
+                <div>
+                    <span>🛡️</span>
+                    <h3>Protect</h3>
+                    <p>Provides safe next-step guidance.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        InvestorShield • Investor-awareness prototype
+        <br>
+        Not investment advice • No buy/sell recommendations
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
